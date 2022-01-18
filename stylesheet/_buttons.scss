@@ -1,0 +1,29 @@
+
+button {
+    background: none;
+    border: none;
+}
+
+.action-btn {
+    font-size: 1em;
+    padding: .8em 1.6em;
+    font-weight: bold;
+    border: 2px solid;
+
+    &:hover {
+        color: $brand-color;
+        border-color: $brand-color;
+    }
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: .3s ease;
+
+    &:hover {
+        color: $brand-color;
+    }
+}

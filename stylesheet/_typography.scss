@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Taviraj:wght@100;200;500;700&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $taviraj;
+}
+
+.underline {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 1px;
+        background: $brand-color;
+        left: 50%;
+        bottom: 0;
+        position: absolute;
+
+    }
+}

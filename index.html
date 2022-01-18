@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Home</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+  <body id="home">
+    <main>
+      <header class="header">
+        <a href="#home" class="header__item">Home</a>
+        <a href="#about" class="header__item">About</a>
+        <a href="#" class="header__item logo"
+          >The <br />
+          HOME <br />
+          Company</a
+        >
+        <a href="#services" class="header__item">Services</a>
+        <a href="#contact" class="header__item">Contact</a>
+      </header>
+      <!-- hero section -->
+      <div class="hero">
+        <img
+          src="./images/building.jpg"
+          alt="lagos"
+          class="img-fluid hero__img"
+        />
+        <div class="hero__text">
+          <h1>Welcome HOME</h1>
+          <p>Haven Of Musical Excellence Ltd</p>
+          <br />
+          <a href="#contact" class="action-btn">Contact Us</a>
+        </div>
+        <a class="arrow-down" href="#about">
+          Scroll Down <br />
+          <i class="fas fa-angle-down fa-2x"></i
+        ></a>
+      </div>
+      <!-- about section -->
+      <div id="about" class="container about">
+        <h2 class="my-3 underline">About HOME</h2>
+        <div class="about__wrapper">
+          <!-- <div class="about__img">
+            <img class="img-fluid" src="./images/lag.jpg" alt="image">
+        </div> -->
+          <div class="about__text">
+            <p>
+              Haven of Musical excellence is your number one source for all
+              things music. We're dedicated to providing you the very best of
+              customer satisfaction, with an emphasis on dependability.
+              professionalism and excellence.
+            </p>
+            <p>
+              Haven of Musical excellence is your number one source for all
+              things music. We're dedicated to providing you the very best of
+              customer satisfaction, with an emphasis on dependability.
+              professionalism and excellence.
+            </p>
+            <p>
+              Haven of Musical excellence is your number one source for all
+              things music. We're dedicated to providing you the very best of
+              customer satisfaction, with an emphasis on dependability.
+              professionalism and excellence.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="about__footer">
+          <img src="./images/abrsm.jpeg" alt="abrsm logo">
+          <img src="./images/freedomP.png" alt="freedom park logo">
+          <img src="./images/MUSON.jpeg" alt="muson logo">
+      </div> -->
+      </div>
+      <!-- services section -->
+      <div id="services" class="services">
+        <h2 class="underline">Services We Offer</h2>
+        <br />
+        <div class="services__wrapper">
+          <a class="services__service" href="https://homemusicschool.org">
+            <h4>Private Music school</h4>
+            <p>
+              A music school that provides quality music lessons in the
+              convenience of your home. Our goal is to help our students build a
+              solid foundation in music and meet their objectives for learning
+              music. We offer music education for individuals of just about
+              every age and skill level.
+            </p>
+          </a>
+          <a
+            class="services__service"
+            href="https://mo-renike.github.io/Bandittude/"
+          >
+            <h4>All Female Live Band</h4>
+            <p>
+              Bandittude is a platform that allows, inspires and encourages
+              Women to pursue, explore and achieve their potential to the
+              fullest. Bandittude aims to inspire women and girls around the
+              world as they contribute to the Girl Power movement, using music
+              as a tool.
+            </p>
+          </a>
+          <a class="services__service" href="https://homemusicschool.org/shop/">
+            <h4>Music Store</h4>
+            <p>
+              Sales of quality musical instruments, music books and eqiupments
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- contact section -->
+
+      <div id="contact" class="contact p-4">
+        <h2 class="my-4 underline text-center">Contact Us</h2>
+        <br />
+        <div class="contact__wrapper">
+          <address>
+              <a href="#" class="logo"> <h3>
+              The <br />
+              HOME <br />
+              Company
+            </h3></a>
+           <p>Haven of Musical excellence is your <br> number one source for all things music. </p>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ajah, Lekki, Lagos</a>
+            <a href="mailto:homemusiccompany@gmail.com"
+              ><i class="fas fa-envelope"></i>Mail Us</a
+            > 
+            <a href="tel:+2348086036016"><i class="fas fa-phone"></i> Call Us</a>
+          </address>
+          <form>
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <textarea
+              name="message"
+              id="message"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <a href="#home" class="footer__back-to-top"
+          ><i class="fas fa-angle-up fa-2x"></i
+        ></a>
+
+        <div class="footer__text">
+          <small>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            © HOME</small
+          >
+        </div>
+        <div class="footer__socials">
+          <a href=""><i class="mx-2 fas fa-phone"></i></a>
+          <a href=""><i class="mx-2 fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
