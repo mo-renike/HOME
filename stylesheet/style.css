@@ -5,13 +5,14 @@ hr {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   font-size: 16px;
   background-color: #141414;
   color: #e6e6e6;
+  overflow-x: hidden;
+  width: 100vw;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   line-height: 1.7;
@@ -102,17 +103,52 @@ h5 {
   transition: all 1s ease-in;
 }
 
+@media (max-width: 450px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: red;
+    height: 100vh;
+    z-index: 4;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.header #openNav, .header #closeNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #e6e6e6;
+  padding: 1em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.header #closeNav {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .header #closeNav {
+    display: block;
+  }
+}
+
 .header.sticky {
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all .8s ease-in;
+  transition: all .8s ease-in;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   padding: 1em;
   background-color: #141414;
-  -webkit-box-shadow: 2px 2px black;
-          box-shadow: 2px 2px black;
+  -webkit-box-shadow: 1px 1px black;
+          box-shadow: 1px 1px black;
 }
 
 .header.sticky .logo {
@@ -240,6 +276,12 @@ h5 {
   width: 70%;
 }
 
+@media (max-width: 450px) {
+  .about__wrapper {
+    width: 100%;
+  }
+}
+
 .about__img {
   padding: 10px;
   margin: auto;
@@ -325,8 +367,23 @@ h5 {
           justify-content: space-evenly;
 }
 
+@media (max-width: 450px) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__wrapper > * {
   width: 40%;
+}
+
+@media (max-width: 450px) {
+  .contact__wrapper > * {
+    width: 100%;
+  }
 }
 
 .contact__wrapper address {

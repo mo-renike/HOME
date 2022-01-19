@@ -27,7 +27,7 @@ $text: #e6e6e6;
 $light :#a8eeff;
 $white :#ffffff;
 $border-radius: 10px;
-$box-shadow: 2px 2px black;
+$box-shadow: 1px 1px black;
 $poppins: 'Poppins',
 sans-serif;
 $taviraj: 'Taviraj',
@@ -39,13 +39,15 @@ hr{
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+   
 }
 
 body {
     font-size: 16px;
     background-color: $bg;
-    color: $text;
+    color: $text; 
+    overflow-x: hidden;
+    width: 100vw;
     font-family: $poppins;
     font-weight: lighter;
     line-height: 1.7;

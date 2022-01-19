@@ -1,10 +1,6 @@
-//preloader and pop-up text
-window.onload = function () {
-    document.querySelector(".preloader").style.display = "none";
-  };
 
-  // Sticky Navbar
-const navbar = document.querySelector("header");
+// Sticky Navbar
+const navbar = document.querySelector(".header");
 let sticky = navbar.offsetTop;
 const navbarScroll = () => {
   if (window.pageYOffset > sticky) {
@@ -14,3 +10,12 @@ const navbarScroll = () => {
   }
 };
 window.onscroll = navbarScroll;
+
+const navs = document.querySelectorAll(".header__item");
+
+
+for (const nav of navs) {
+  nav.addEventListener("click", () => {
+    console.log(nav);
+  });
+}
