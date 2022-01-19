@@ -1,19 +1,19 @@
 
 @mixin respond($breakpoint) {
     @if $breakpoint==large {
-        @media (min-width: 860px) {
+        @media (min-width: 760px) {
             @content;
         }
     }
 
     @if $breakpoint==medium {
-        @media (max-width: 959px) {
+        @media (max-width: 859px) {
             @content;
         }
     }
 
     @if $breakpoint==small {
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
             @content;
         }
     }

@@ -1,0 +1,101 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1em 3em;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    transition: all .4s ease-in;
+
+    #toggler {
+        display: none;
+        color: $text;
+        font-size: 1.3em;
+        position: fixed;
+        right: 10%;
+        top: 1em;
+    }
+
+    @include respond(small) {
+        padding: 1em;
+        justify-content: space-between;
+
+
+        #toggler {
+            display: block;
+        }
+
+        .header__item {
+            display: none;
+
+            &:nth-child(3) {
+                display: block;
+            }
+        }
+    }
+
+    &.mobile {
+        height: 100vh;
+        max-height: 100vh;
+        background-color: $bg;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 4;
+
+        .header__item {
+            display: block;
+        }
+
+    }
+
+
+    &.sticky {
+        transition: all .8s ease-in;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 1em;
+        background-color: $bg;
+        box-shadow: $box-shadow;
+
+        .logo {
+            font-size: 1em;
+        }
+    }
+
+    .logo {
+        font-size: 1.3em;
+        letter-spacing: 2px;
+        font-family: $taviraj;
+
+        @include respond(small) {
+            font-size: .7em;
+        }
+    }
+
+    a {
+        position: relative;
+        color: inherit;
+        text-transform: uppercase;
+        width: max-content;
+        margin: 0 2em;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 2px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease;
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: $brand-color;
+        }
+    }
+}

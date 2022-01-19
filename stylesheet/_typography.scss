@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Taviraj:wght@100;200;500;700&display=swap');
 
 
+
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-family: $taviraj;
+}
+h1{
+    font-size: 1em;
 }
 
 .underline {
@@ -15,7 +19,7 @@ h5 {
     &::after {
         content: "";
         display: block;
-        width: 80px;
+        width: 90px;
         height: 1px;
         background: $brand-color;
         left: 50%;
