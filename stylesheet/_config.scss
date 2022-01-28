@@ -39,7 +39,6 @@ hr{
 
 html {
     scroll-behavior: smooth;
-   
 }
 
 body {
@@ -50,8 +49,8 @@ body {
     width: 100vw;
     font-family: $poppins;
     font-weight: lighter;
-    line-height: 1.7;
-    letter-spacing: normal;
+    line-height: 2;
+    letter-spacing: 1px;
 
     @include respond(medium) {
         font-size: 14px;

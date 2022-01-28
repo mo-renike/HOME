@@ -15,8 +15,8 @@ body {
   width: 100vw;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
-  line-height: 1.7;
-  letter-spacing: normal;
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 859px) {
@@ -37,7 +37,7 @@ button {
 }
 
 .action-btn {
-  font-size: 1em;
+  font-size: 1rem;
   padding: .8em 1.6em;
   font-weight: bold;
   border: 2px solid;
@@ -52,6 +52,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  font-weight: 400;
   text-align: center;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -70,7 +71,7 @@ h5 {
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .underline {
@@ -80,10 +81,10 @@ h1 {
 .underline::after {
   content: "";
   display: block;
-  width: 90px;
-  height: 1px;
+  width: 80px;
+  height: 2px;
   background: #48c3e2;
-  left: 50%;
+  left: 40%;
   bottom: 0;
   position: absolute;
 }
@@ -127,7 +128,7 @@ h1 {
 .hero .arrow-down {
   position: absolute;
   bottom: 20px;
-  font-size: .7em;
+  font-size: .7rem;
   font-weight: lighter;
   width: 100%;
   text-align: center;
@@ -162,17 +163,22 @@ h1 {
 }
 
 .hero__text h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-transform: capitalize;
 }
 
+.hero__text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 .about {
-  padding: 1em;
+  padding: 1rem;
   text-align: center;
 }
 
 .about__wrapper {
-  padding: 3em;
+  padding: 3rem;
   margin: auto;
   width: 70%;
 }
@@ -204,20 +210,20 @@ h1 {
 
 .about__footer img {
   height: 50px;
-  margin: 2em;
+  margin: 2rem;
 }
 
 .services {
   background-color: #0f0f0f;
   text-align: center;
-  padding: 3em;
+  padding: 5rem  3rem;
 }
 
 .services__wrapper {
-  padding: 1em;
+  padding: 1rem;
   display: -ms-grid;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 3rem;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -230,10 +236,10 @@ h1 {
 }
 
 .services__service {
-  border: 1px solid #222;
-  border-bottom: 3px solid #222;
+  border: 1px solid black;
+  border-bottom: 3px solid black;
   border-radius: 10px;
-  padding: 2em 1.4em;
+  padding: 2rem 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +256,7 @@ h1 {
 
 .services__service h4 {
   color: #a8eeff;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .services__service:hover {
@@ -259,7 +265,7 @@ h1 {
 }
 
 .contact__wrapper {
-  padding: 3em;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,7 +350,7 @@ h1 {
 .contact__wrapper form > * {
   background-color: #141414;
   margin: 6px 0;
-  padding: .7em;
+  padding: .7rem;
   border: 1px solid #222;
   border-radius: 10px;
   color: #e6e6e6;
@@ -353,7 +359,7 @@ h1 {
 
 .footer {
   background-color: #070707;
-  padding: 2em;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,14 +372,14 @@ h1 {
 }
 
 .footer > * {
-  margin: 0 2em;
+  margin: 0 2rem;
 }
 
 .header {
   position: fixed;
   width: 100%;
   top: 0;
-  padding: 1em 3em;
+  padding: 1rem 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -391,15 +397,15 @@ h1 {
 .header #toggler {
   display: none;
   color: #e6e6e6;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   position: fixed;
   right: 10%;
-  top: 1em;
+  top: 1rem;
 }
 
 @media (max-width: 550px) {
   .header {
-    padding: 1em;
+    padding: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -440,25 +446,24 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 1em;
+  padding: 1rem;
   background-color: #141414;
   -webkit-box-shadow: 1px 1px black;
           box-shadow: 1px 1px black;
 }
 
 .header.sticky .logo {
-  font-size: 1em;
+  font-size: .8rem;
 }
 
 .header .logo {
-  font-size: 1.3em;
-  letter-spacing: 2px;
+  font-size: 1rem;
   font-family: "Taviraj", serif;
 }
 
 @media (max-width: 550px) {
   .header .logo {
-    font-size: .7em;
+    font-size: .5rem;
   }
 }
 
@@ -469,7 +474,8 @@ h1 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 2em;
+  font-size: .8rem;
+  margin: 0 2rem;
 }
 
 .header a:after {

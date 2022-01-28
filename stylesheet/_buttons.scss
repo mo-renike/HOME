@@ -5,7 +5,7 @@ button {
 }
 
 .action-btn {
-    font-size: 1em;
+    font-size: 1rem;
     padding: .8em 1.6em;
     font-weight: bold;
     border: 2px solid;
@@ -20,6 +20,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    font-weight: 400;
     text-align: center;
     transition: .3s ease;
 

@@ -10,7 +10,7 @@ h5 {
     font-family: $taviraj;
 }
 h1{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .underline {
@@ -19,10 +19,10 @@ h1{
     &::after {
         content: "";
         display: block;
-        width: 90px;
-        height: 1px;
+        width: 80px;
+        height: 2px;
         background: $brand-color;
-        left: 50%;
+        left: 40%;
         bottom: 0;
         position: absolute;
 
